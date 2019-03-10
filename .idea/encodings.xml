@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ssoproject-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ssoproject-commons" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ssoproject-commons/src/main/java/com/cjy/sso/util/CookiesGetUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ssoproject-commons/src/main/java/com/cjy/sso/util/CookiesGetUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ssoproject-commons/src/main/java/com/cjy/sso/util/HttpUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ssoproject-commons/src/main/java/com/cjy/sso/util/HttpUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ssoproject-sso" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ssoproject-sso/src/main/java/com/cjy/sso/config/RedisCacheConfig.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ssoproject-sso/src/main/java/com/cjy/sso/controller/UserController.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ssoproject-sso/src/main/java/com/cjy/sso/service/impl/UserServiceImpl.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ssoproject-web1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ssoproject-web1/src/main/java/com/cjy/sso/controller/LoginController.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ssoproject-web1/src/main/java/com/cjy/sso/controller/Web1Controller.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ssoproject-web1/src/main/java/com/cjy/sso/interceptor/LoginInterceptor.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ssoproject-web2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ssoproject-web2/src/main/java/com/cjy/sso/controller/LoginController.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ssoproject-web2/src/main/java/com/cjy/sso/controller/Web1Controller.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ssoproject-web2/src/main/java/com/cjy/sso/interceptor/LoginInterceptor.java" charset="GBK" />
+  </component>
+</project>

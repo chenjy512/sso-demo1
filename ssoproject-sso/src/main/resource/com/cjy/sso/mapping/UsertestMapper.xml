@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cjy.sso.dao.UserDao" >
+
+ <!--返回值类型接收-->
+  <resultMap id="BaseResultMap" type="com.cjy.sso.pojo.User" >
+    <id column="id" property="id" />
+    <result column="user_name" property="userName" jdbcType="VARCHAR" />
+    <result column="pass_wd" property="passWd" jdbcType="VARCHAR" />
+  </resultMap>
+  
+  <select id="findUserByUserName" parameterType="string" resultMap="BaseResultMap">
+  	select * from user where user_name = #{userName}
+  </select>
+  
+  <select id="findUserById" parameterType="int" resultMap="BaseResultMap">
+  	select * from user where id = #{id}
+  </select>
+  
+</mapper>
