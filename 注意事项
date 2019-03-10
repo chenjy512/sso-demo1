@@ -1,0 +1,46 @@
+1.父工程中的pom只做版本控制
+2.子工程中需要使用父工程的pom依赖依然需要引入，只不过不用定义版本，由父工程统一指定版本控制。
+3.下面三个依赖在父工程中引入，子工程无法使用，提示版本未明确，所以在子工程中需要指明版本。
+<dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.4.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpcore</artifactId>
+            <version>4.4.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.24</version>
+</dependency>
+
+4.下面两个依赖，需要在子工程中定义生命周期，web工程注意即可
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jsp-api</artifactId>
+            <version>2.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1-b08</version>
+            <scope>provided</scope>
+        </dependency>
+
+5. redis需要注意，如果没有设置密码则不要在配置文件中设置；
+   rdb持久好化文件设置；
+   数据源连接池配置问题；
+
+6.可以尝试加入dubbo与zookeeper进入工程中，把用户查询服务抽出做服务注册与发现，目前没有经历来做，留待后续
+
+7.每个模块的依赖其实不用导入这么多的，只引入当前模块所需要的，我为了省事在每个模块中都引入了好多用不到的依赖。在实际工程中是需要注意的，有可能为编码中引入类造成困扰，或jar冲突问题。
+
+8.来源于博客，这两个博客写的非常清楚，原理特别清晰：
+https://blog.csdn.net/qq_37334135/article/details/77727456
+https://blog.csdn.net/zzxwx/article/details/79926520

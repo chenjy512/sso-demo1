@@ -140,7 +140,6 @@
         <!-- json 消息转发器需要的jar  end -->
 
         <!-- servlet jar start -->
-        <!-- servlet jar start -->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>jsp-api</artifactId>
